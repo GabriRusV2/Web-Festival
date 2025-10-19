@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/logo.png" type="image/png">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Página de registro</title>
+</head>
+
+<body>
+    <header>
+        <div id="particles-js-header"></div>
+
+        <div class="logoContenedor">
+            <a href='./index.html' class="logo"> <img src="./img/Logo.png" alt="Logo"> </a>
+        </div>
+        <nav id="navmenu">
+            <div class="botonesPosicion">
+                <button class="hamburger" id="menu-toggle">&#9776;</button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="./index.html" class="boton">INICIO<span class="hover-text"></span></a></li>
+                    <li><a href="./menu.html" class="boton">MENU<span class="hover-text"></span></a></li>
+                    <li><a href="./perfil.html" class="boton">PERFIL<span class="hover-text"></span></a></li>
+                    <li><a href="./registro.html" class="boton">REGISTRARSE<span class="hover-text"></span></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="mainRegistro">
+        <section class="contenedorRegistro">
+            <form class="formularioRegistro">
+                <h2 class="tituloRegistro">Inicio de sesión</h2>
+                <input class="celdas" type="email" name="usuario" id="txtInicioSesion" placeholder="Correo electrónico"
+                    required>
+                <input class="celdas" type="password" name="password" id="pwdInicioSesion" placeholder="Contraseña"
+                    required>
+                <p id="errorMsg" class="error"></p>
+                <label><a class="textolink" href="./registro.html">¿Todavía no tienes cuenta?</a></label>
+                <button class="botonRegistro" type="submit" id="btnInicioSesion">Iniciar Sesión</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div id="particles-js-footer"></div>
+        <div class="footerContenido">
+            <p>&copy; 2025 GOV Festival. Todos los derechos reservados.</p>
+            <p>
+                <a href="#">Política de Privacidad</a> |
+                <a href="#">Términos de Servicio</a>
+            </p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="./javascript/JSHeader.js"></script>
+    <script src="./javascript/JSInicioSesion.js"></script>
+</body>
+
+</html>

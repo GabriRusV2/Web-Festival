@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/logo.png" type="image/png">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Página de registro</title>
+</head>
+
+<body>
+    <header>
+        <div id="particles-js-header"></div>
+
+        <div class="logoContenedor">
+            <a href='./index.html' class="logo"> <img src="./img/Logo.png" alt="Logo"> </a>
+        </div>
+        <nav id="navmenu">
+            <div class="botonesPosicion">
+                <button class="hamburger" id="menu-toggle">&#9776;</button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="./index.html" class="boton">INICIO<span class="hover-text"></span></a></li>
+                    <li><a href="./menu.html" class="boton">MENU<span class="hover-text"></span></a></li>
+                    <li><a href="./perfil.html" class="boton">PERFIL<span class="hover-text"></span></a></li>
+                    <li><a href="./inicioSesion.html" class="boton">INICIO DE SESIÓN<span class="hover-text"></span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="mainRegistro">
+        <section class="contenedorRegistro">
+            <form class="formularioRegistro">
+                <h2 class="tituloRegistro">Registro</h2>
+                <article class="fila">
+                    <input class="usuario" type="text" name="usuario" id="txtRegistro" placeholder="Nombre de usuario"
+                        required>
+                    <input class="anio" type="number" id="anio" placeholder="Año de nacimiento" required>
+                </article>
+                <input class="celdas" type="email" id="email" placeholder="Correo electrónico" required>
+                <input class="celdas" type="password" name="password" id="pwdRegistro" placeholder="Contraseña"
+                    required>
+                
+                    
+                  
+                    <label class="nacionalidad textoFormulario" for="nacionalidad">Nacionalidad:</label>
+                    <select class="nacionalidad textoFormulario" id="nacionalidad">
+                        <option value="alemán">Alemán</option>
+                        <option value="chino">Chino</option>
+                        <option value="coreano">Coreano</option>
+                        <option value="español">Español</option>
+                        <option value="francés">Francés</option>
+                        <option value="inglés">Inglés</option>
+                        <option value="japonés">Japonés</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </article>
+                <label><input type="checkbox" id="novedades" checked> Deseo recibir información sobre novedades y
+                    ofertas</label>
+                <label><input type="checkbox" id="acepto" required> Declaro haber leído y acepto las condiciones</label>
+                <label><a class="textolink" href="./inicioSesion.html">¿Ya tienes una cuenta?</a></label>
+                <button class="botonRegistro" type="button" id="btnRegistro">Registrarse</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div id="particles-js-footer"></div>
+        <div class="footerContenido">
+            <p>&copy; 2025 GOV Festival. Todos los derechos reservados.</p>
+            <p>
+                <a href="#">Política de Privacidad</a> |
+                <a href="#">Términos de Servicio</a>
+            </p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="./javascript/JSHeader.js"></script>
+    <script src="./javascript/JSRegistrarse.js"></script>
+</body>
+
+</html>
